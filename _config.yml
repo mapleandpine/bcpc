@@ -17,3 +17,6 @@ github_username:  mapleandpine
 
 # Build settings
 markdown: kramdown
+
+gems:
+- jekyll-gallery-generator
