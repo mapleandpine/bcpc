@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+  <body class="wide">
+    <div class="wrapper">
+      {% include header.html %}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
+      {% include footer.html %}
     </div>
-
-    {% include footer.html %}
-
+    <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+    <script type="text/javascript" src="vendor/plugins-compressed.js"></script>
+    <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="scripts/theme-functions.js"></script>
+    <script src="scripts/custom.js"></script>
   </body>
-
 </html>
