@@ -17,3 +17,6 @@ github_username:  mapleandpine
 
 # Build settings
 markdown: kramdown
+
+collections:
+- my_collection
