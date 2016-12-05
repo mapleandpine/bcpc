@@ -226,22 +226,34 @@ layout: default
     }
   }); /*ready*/
 </script>
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="page-heading">Posts</h1>
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="article-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Bridge City Paddling Club</h2>
+        <p>We are a Dragon boat &amp; outrigger canoe paddling in downtown Portland.</p>
+        <p>Drop Coach an email to learn more about our team and year-round paddling: jeremy@bridgecitypaddling.org.</p>
 
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        Save the date! Saturday, December 10th for BCPC End of Season Party!
+
+        Don't forget we are doing a food & clothing drive for the American Legion Post 134. See email for details and bring the donations to the party! 
+
+        Always recruiting - men, women, veterans, & high school.
+      </div>
+      <div class="col-md-6">
+        <h2>Posts</h2>
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </li>
+          {% endfor %}
+        </ul>
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
     </div>
   </div>
 </div>
