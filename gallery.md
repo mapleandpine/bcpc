@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Gallery
+permalink: /gallery
 ---
 <script src="{{ "vendor/nanogallery/jquery.nanogallery.min.js" | prepend: site.baseurl }}"></script>
 <link href="{{ "vendor/nanogallery/nanogallery.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">

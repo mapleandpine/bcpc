@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: Resources
-permalink: /resources/
+permalink: /resources
 ---
 
 Bridge City is a competitive Dragon Boat and Outrigger Canoe Club in Portland, Oregon. We are a 501(c)3, non-profit organization.

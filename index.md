@@ -232,13 +232,12 @@ layout: default
       <div class="col-md-6">
         <h2>About Bridge City Paddling Club</h2>
         <p>We are a Dragon boat &amp; outrigger canoe paddling in downtown Portland.</p>
-        <p>Drop Coach an email to learn more about our team and year-round paddling: jeremy@bridgecitypaddling.org.</p>
+        <p>Drop Coach an email to learn more about our team and year-round paddling: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+        <h3>Save the date! Saturday, December 10th for BCPC End of Season Party!</h3>
 
-        Save the date! Saturday, December 10th for BCPC End of Season Party!
+        Don't forget we are doing a food &amp; clothing drive for the American Legion Post 134. See email for details and bring the donations to the party! 
 
-        Don't forget we are doing a food & clothing drive for the American Legion Post 134. See email for details and bring the donations to the party! 
-
-        Always recruiting - men, women, veterans, & high school.
+        Always recruiting - men, women, veterans, &amp; high school.
       </div>
       <div class="col-md-6">
         <h2>Posts</h2>
