@@ -1,0 +1,15 @@
+.nanoGalleryNavigationbarContainer {
+
+  // class is beind overridden by external theme classes
+  // bring back intended themes
+  .separator {
+    width: auto !important;
+    display: inline-block !important;
+  }
+
+  // force fallback to inherit
+  // currently theme has hover color set to white
+  .nanoGalleryBreadcrumb > *:hover {
+    color: inherit !important;
+  }
+}
