@@ -13,19 +13,18 @@
           <div class="widget clearfix widget-contact-us" style="background-image: url('images/world-map.png'); background-position: 50% 55px; background-repeat: no-repeat">
             <h4 class="widget-title">Contact us</h4>
             <ul class="list-large list-icons">
-              <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 5822 SW Alfred Street<br>
-              Portland, OR 97219</li>
-              <li>
-                <i class="fa fa-envelope"></i><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-              </li>
+              <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> <span class="editable">5822 SW Alfred Street</span><br>
+              <span class="editable">Portland, OR 97219</span></li>
+              <li><i class="fa fa-phone"></i><strong>Phone:</strong> <a href="tel:503-683-2519" class="editable">503-683-2519</a></li>
+              <li><i class="fa fa-envelope"></i><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="widget clearfix widget-tweeter">
-            <h4 class="widget-title">Recent Tweets</h4>
-          </div>
-        </div>
+        <div class="widget clearfix widget-flickr">
+          <h4 class="widget-title">Flickr feed</h4>
+          <div data-flickr-images="15" data-flickr-id="52617155@N08" class="flickr-widget"></div>
+        </div> 
         <div class="col-md-4">
           <div class="widget clearfix widget-newsletter">
             <form action="include/subscribe-form.php" class="form-inline" id="widget-subscribe-form" method="post" name="widget-subscribe-form" role="form">
@@ -35,30 +34,30 @@
               </div>
             </form>
             <script type="text/javascript">
-                  jQuery("#widget-subscribe-form").validate({
-                    submitHandler: function(form) {
-                      jQuery(form).ajaxSubmit({
-                        dataType: 'json',
-                        success: function(text) {
-                          if (text.response == 'success') {
-                            $.notify({
-                              message: "You have successfully subscribed to our mailing list."
-                            }, {
-                              type: 'success'
-                            });
-                            $(form)[0].reset();
+              jQuery("#widget-subscribe-form").validate({
+                submitHandler: function(form) {
+                  jQuery(form).ajaxSubmit({
+                    dataType: 'json',
+                    success: function(text) {
+                      if (text.response == 'success') {
+                        $.notify({
+                          message: "You have successfully subscribed to our mailing list."
+                        }, {
+                          type: 'success'
+                        });
+                        $(form)[0].reset();
 
-                          } else {
-                            $.notify({
-                              message: text.message
-                            }, {
-                              type: 'warning'
-                            });
-                          }
-                        }
-                      });
+                      } else {
+                        $.notify({
+                          message: text.message
+                        }, {
+                          type: 'warning'
+                        });
+                      }
                     }
                   });
+                }
+              });
             </script>
           </div>
         </div>
