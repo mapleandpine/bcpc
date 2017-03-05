@@ -34,7 +34,7 @@ layout: home
           data-responsive_offset="on" 
 
           
-          style="z-index: 5; white-space: nowrap;">MAJOR 
+          style="z-index: 5; white-space: nowrap;"><span class="editable">MAJOR</span>
         </div>
 
         <!-- LAYER NR. 2 -->
@@ -58,7 +58,7 @@ layout: home
           data-responsive_offset="on" 
 
           
-          style="z-index: 6; white-space: nowrap;">LEAGUE 
+          style="z-index: 6; white-space: nowrap;"><span class="editable">LEAGUE</span>
         </div>
 
         <!-- LAYER NR. 3 -->
@@ -102,7 +102,7 @@ layout: home
 
           data-elementdelay="0.05" 
           
-          style="z-index: 8; white-space: nowrap; font-size: 30px; line-height: 30px;">WATCH THE LIVE STREAM 
+          style="z-index: 8; white-space: nowrap; font-size: 30px; line-height: 30px;"><span class="editable">WATCH THE LIVE STREAM</span>
         </div>
 
         <!-- LAYER NR. 5 -->
@@ -124,7 +124,7 @@ layout: home
 
           
           style="z-index: 9; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);background-color:rgba(0, 0, 0, 0);border-radius:0px 0px 30px 30px;">
-            <div class="rs-looped rs-slideloop"  data-easing="Power3.easeInOut" data-speed="1" data-xs="0" data-xe="0" data-ys="0" data-ye="3"><i class="fa fa-arrow-up"></i> NOW IN FULL HD 
+            <div class="rs-looped rs-slideloop"  data-easing="Power3.easeInOut" data-speed="1" data-xs="0" data-xe="0" data-ys="0" data-ye="3"><i class="fa fa-arrow-up"></i> <span class="editable">NOW IN FULL HD</span>
             </div>
         </div>
 
@@ -151,7 +151,7 @@ layout: home
           data-responsive_offset="off" 
           data-responsive="off"
           
-          style="z-index: 10; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Raleway;background-color:rgba(0, 0, 0, 0);padding:12px 35px 12px 35px;border-color:rgba(255, 255, 255, 0.50);border-style:solid;border-width:2px;letter-spacing:2px;">CREATE FREE ACCOUNT 
+          style="z-index: 10; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Raleway;background-color:rgba(0, 0, 0, 0);padding:12px 35px 12px 35px;border-color:rgba(255, 255, 255, 0.50);border-style:solid;border-width:2px;letter-spacing:2px;"><span class="editable">CREATE FREE ACCOUNT</span>
         </div>
 
         <!-- LAYER NR. 7 -->
@@ -175,7 +175,7 @@ layout: home
             data-actions='[{"event":"click","action":"scrollbelow","offset":"px"}]'
             data-responsive_offset="off" 
             data-responsive="off"
-            style="z-index: 11; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Raleway;background-color:rgba(219, 28, 34, 1.00);padding:12px 35px 12px 35px;border-color:rgba(219, 28, 34, 0);border-style:solid;border-width:2px;letter-spacing:2px;">SIGN UP FOR PREMIUM 
+            style="z-index: 11; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Raleway;background-color:rgba(219, 28, 34, 1.00);padding:12px 35px 12px 35px;border-color:rgba(219, 28, 34, 0);border-style:solid;border-width:2px;letter-spacing:2px;"><span class="editable">SIGN UP FOR PREMIUM</span>
         </div>
       </li>
     </ul>
@@ -225,33 +225,54 @@ layout: home
     }
   }); /*ready*/
 </script>
-<div class="article-content">
+
+<section class="content">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>About Bridge City Paddling Club</h2>
-        <p>We are a Dragon boat &amp; outrigger canoe paddling in downtown Portland.</p>
-        <p>Drop Coach an email to learn more about our team and year-round paddling: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
-        <h3>Save the date! Saturday, December 10th for BCPC End of Season Party!</h3>
-
-        Don't forget we are doing a food &amp; clothing drive for the American Legion Post 134. See email for details and bring the donations to the party! 
-
-        Always recruiting - men, women, veterans, &amp; high school.
-      </div>
-      <div class="col-md-6">
-        <h2>Posts</h2>
-        <ul class="post-list">
+    <div role="alert" class="alert alert-info">
+      <h4>All Paddlers</h4>
+      <p>Wednesday nights are dryland practice from now until March 8th at Crossfit Primal Energy from 7-8pm.</p>
+    </div>
+    <!-- Blog post-->
+    <div class="post-content post-modern">
+      <div class="timeline">
+        <ul class="timeline-circles">
+          <li class="timeline-date">{{ site.time | date: '%-d %b %Y' }}</li>
           {% for post in site.posts %}
-            <li>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-            </li>
+          <li>
+            <div class="timeline-block">
+              <!-- Blog image post-->
+              <div class="post-item">
+                <div class="post-image">
+                  <a href="{{ post.url | prepend: site.baseurl }}"><img alt="{{ post.title }}" src="{{ site.url }}/uploads/{{ post.image }}"></a>
+                </div>
+                <div class="post-content-details">
+                  <div class="post-title">
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  </div>
+                  <div class="post-info">
+                    <span class="post-category">Posted in <a href="#">{{ post.categories }}</a></span>
+                  </div>
+                  <div class="post-description">
+                    {{ post.excerpt }}
+                    <div class="post-info">
+                      <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">read more <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-meta">
+                  <div class="post-date">
+                    <span class="post-date-day">{{ post.date | date: "%-d" }}</span> <span class="post-date-month">{{ post.date | date: "%b" }}</span> <span class="post-date-year">{{ post.date | date: "%Y" }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
           {% endfor %}
         </ul>
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
       </div>
-    </div>
+    </div><!-- END: Blog post-->
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   </div>
-</div>
+</section><!-- END: SECTION -->
+
+
