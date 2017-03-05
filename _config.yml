@@ -11,7 +11,7 @@ email: jeremy@bridgecitypaddling.org
 description: > # this means to ignore newlines until "baseurl:"
   Bridge City is a competitive Dragon Boat and Outrigger Canoe Club in Portland, Oregon. We are a 501(c)3, non-profit organization.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "proud-acorn1.cloudvent.net"
+url: "http://proud-acorn1.cloudvent.net/"
 # url: "http://www.bridgecitypaddling.org" # the base hostname & protocol for your site
 twitter_username: maple_and_pine
 github_username:  mapleandpine
