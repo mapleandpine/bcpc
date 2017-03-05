@@ -1,6 +1,11 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
+require 'rbconfig'
+if RbConfig::CONFIG['target_os'] =~ /darwin(1[0-3])/i
+  gem 'rb-fsevent', '<= 0.9.4'
+end
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
