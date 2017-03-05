@@ -3,6 +3,14 @@
 ---
 @charset "utf-8";
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -41,18 +49,18 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "vendor/bootstrap",
-        "vendor/font-awesome",
-        "vendor/animate",
-        "vendor/owl.carousel",
-        "vendor/magnific-popup",
-        "vendor/rs-slider/settings",
-        "vendor/rs-slider/layers",
-        "vendor/rs-slider/navigation",
-        "vendor/rs-slider/rs-plugin-styles",
-        "base/base",
-        "elements/elements",
-        "responsive/responsive",
-        "themes/blue",
-        "custom"
+    "vendor/bootstrap",
+    "vendor/font-awesome",
+    "vendor/animate",
+    "vendor/owl.carousel",
+    "vendor/magnific-popup",
+    "vendor/rs-slider/settings",
+    "vendor/rs-slider/layers",
+    "vendor/rs-slider/navigation",
+    "vendor/rs-slider/rs-plugin-styles",
+    "base/base",
+    "elements/elements",
+    "responsive/responsive",
+    "themes/blue",
+    "custom"
 ;
