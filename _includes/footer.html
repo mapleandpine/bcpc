@@ -20,45 +20,10 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
-        <div class="widget clearfix widget-flickr">
-          <h4 class="widget-title">Flickr feed</h4>
-          <div data-flickr-images="15" data-flickr-id="52617155@N08" class="flickr-widget"></div>
-        </div> 
-        <div class="col-md-4">
-          <div class="widget clearfix widget-newsletter">
-            <form action="include/subscribe-form.php" class="form-inline" id="widget-subscribe-form" method="post" name="widget-subscribe-form" role="form">
-              <h4 class="widget-title">Newsletter</h4><small>Stay informed on our latest news!</small>
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span> <input aria-required="true" class="form-control required email" name="widget-subscribe-form-email" placeholder="Enter your Email" type="email"> <span class="input-group-btn"><button class="btn btn-primary" id="widget-subscribe-submit-button" type="submit"><span class="input-group-btn">Subscribe</span></button></span>
-              </div>
-            </form>
-            <script type="text/javascript">
-              jQuery("#widget-subscribe-form").validate({
-                submitHandler: function(form) {
-                  jQuery(form).ajaxSubmit({
-                    dataType: 'json',
-                    success: function(text) {
-                      if (text.response == 'success') {
-                        $.notify({
-                          message: "You have successfully subscribed to our mailing list."
-                        }, {
-                          type: 'success'
-                        });
-                        $(form)[0].reset();
-
-                      } else {
-                        $.notify({
-                          message: text.message
-                        }, {
-                          type: 'warning'
-                        });
-                      }
-                    }
-                  });
-                }
-              });
-            </script>
+        <div class="col-md-8">
+          <div class="widget clearfix widget-flickr">
+            <h4 class="widget-title">Flickr feed</h4>
+            <div data-flickr-images="16" data-flickr-id="80739062@N00" class="flickr-widget"></div>
           </div>
         </div>
       </div>
