@@ -2,7 +2,7 @@
 layout: post
 title:  "Polar Plunge"
 date:   2017-02-25 14:12:36 -0800
-categories: event
+categories: event community
 excerpt_separator: <!--more-->
 image: "plunge2015soor.jpg"
 ---
