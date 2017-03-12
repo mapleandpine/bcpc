@@ -24,11 +24,23 @@
           <nav id="mainMenu" class="main-menu mega-menu">
             <ul class="main-menu nav nav-pills">
               <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a></li>
-              {% for my_page in site.pages %}
-                {% if my_page.title %}
-                <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}.html">{{ my_page.title }}</a></li>
-                {% endif %}
-              {% endfor %}
+              <li>
+                <a class="page-link" href="/about.html">About</a>
+              </li>
+              <li>
+                <a class="page-link" href="/community.html">Community</a>
+              </li>
+              <li>
+                <a class="page-link" href="/gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a class="page-link" href="/practice-schedule.html">Schedule</a>
+              </li>
+              <li>
+                <a class="page-link" href="/resources.html">Resources</a>
+              </li>
+              <li>
+                <a class="page-link" href="/contact.html">Contact <span class="label label-danger infinit">Join Us</span></a>
             </ul>
           </nav>
         </div>
