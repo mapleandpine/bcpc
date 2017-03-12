@@ -3,17 +3,6 @@ layout: default
 title: Gallery
 permalink: /gallery
 ---
-<script src="{{ "vendor/nanogallery/jquery.nanogallery.min.js" | prepend: site.baseurl }}"></script>
-<link href="{{ "vendor/nanogallery/nanogallery.min.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
-
-<script>
-jQuery(document).ready(function () {
-    jQuery("#gallery").nanoGallery({
-        kind: 'flickr',
-        userID: '80739062@N00'
-    });
-});
-</script>
 
 <section id="page-title" class="page-title-parallax text-light" data-stellar-background-ratio="0.9" style="background-image: url(images/parallax/14.jpg)">
 	<div class="background-overlay"></div>
@@ -26,7 +15,12 @@ jQuery(document).ready(function () {
 
 <section>
 	<div class="container">
-		<div id="gallery"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="editable"><ul><li><a href="/gallery-1">Gallery 1</a></li><li><a href="gallery-2">Gallery 2</a></li></ul></div>
+      </div>
+      <div class="col-md-4 col-lg-6">
+        <img class="editable" src="http://www.bridgecitypaddling.org/_/rsrc/1467132923568/contact-us/dragon_contact.gif" />
+      </div>
 	</div>
 </section>
 

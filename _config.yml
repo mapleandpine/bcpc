@@ -16,6 +16,14 @@ url: "http://proud-acorn1.cloudvent.net/"
 twitter_username: maple_and_pine
 github_username:  mapleandpine
 
+# plugin used for generating photo gallery pages
+# from a single data file
+# https://github.com/avillafiorita/jekyll-datapage_gen
+page_gen:
+  - data: photo_galleries
+    name: name
+    dir: .
+
 # Build settings
 markdown: kramdown
 gems:
