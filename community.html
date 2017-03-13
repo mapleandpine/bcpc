@@ -17,47 +17,55 @@ permalink: /community
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="post-content post-modern col-md-9">
+			<div class="post-content post-modern col-md-8">
+				<p>Bridge City Paddling Club has an active community outreach program helping and raising money for other non-profit organizations in our community.  We generally have two major events a year where we practice "competitive philantrophy" using our strong backs, team spirit, and competitive focus to help organizations such as the Special Olympics of Oregon and the Children's Cancer Association.</p>
+				<div class="seperator"><span>Events</span></div>
 				{% for post in site.categories.community %}
-					<div class="post-item">
-						<div class="post-image">
-							<a href="#"><img alt="" src="{{ site.url }}/uploads/{{ post.image }}"></a>
-						</div>
-						<div class="post-content-details">
-							<div class="post-title">
-								<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-							</div>
-							<div class="post-info">
-								<span class="post-autor">Post by: <a href="#">Alea Grande</a></span> <span class="post-category">in <a href="#">Productivity</a></span>
-							</div>
-							<div class="post-description">
-								{{ post.excerpt }}
-								<div class="post-read-more">
-									<a class="read-more" href="{{ post.url }}">read more <i class="fa fa-long-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="post-meta">
-							<div class="post-date">
-								<span class="post-date-day">16</span> <span class="post-date-month">January</span> <span class="post-date-year">2015</span>
-							</div>
-						</div>
-					</div>
+					{% include post-item.html %}
 				{% endfor %}
 			</div>
-			<div class="sidebar sidebar-modern col-md-3">
+			<div class="sidebar sidebar-modern col-md-4">
 				<div class="widget clearfix widget-archive">
-					<h4 class="widget-title">Archive</h4>
-					<ul class="list list-lines">
-						<li>Jun 2015</li>
-						<li>May 2015</li>
-						<li>Apr 2015</li>
-						<li>Mar 2015</li>
+					<h4 class="widget-title editable">Polar Plunge</h4>
+					<p>For the Special Olympics of Oregon Polar Plunge, the BRRRidge City Polar Paddlers jump in the freezing Columbia River in February of each year.  We have raised over $59,000 over the past six years for Special Olympics.</p>
+					<ul class="list-posts list-medium">
+						<li>2010 - 19 participants raised $6,959</li>
+						<li>2011 - 50 participants raised $7,695</li>
+						<li>2012 - 59 participants raised $7,745</li>
+						<li>2013 - 95 participants raised $11,510</li>
+						<li>2014 - 132 participants raised $12,407</li>
+						<li>2015 - 143 participants raised $12,723</li>
+						<li>2016 - <a href="http://plunge.bridgecitypaddling.org">121 participants raised $11,079</a></li>
+						<li>2017 - 100+ participants raised $7,960 &amp; counting</li>
+					</ul>
+				</div>
+				<div class="widget clearfix widget-archive">
+					<h4 class="widget-title editable">Dawn to Dusk</h4>
+					<p>We created and sponsor the Dawn to Dusk Benefit Paddle each August. Team members and friends paddle a dragon boat from the River Place Marina around Ross Island, making 10-12 laps of six miles over the twelve hours from 8AM to 8PM on a Saturday. We also have several shorter laps for corporate teams interested in a team building activity with all proceeds going to Dawn to Dusk.</p>
+					<ul class="list-posts list-medium">
+						<li>2010 - Raised $5,000 for Blue Planet Network</li>
+						<li>2011 - Raised $7,700 for Children's Cancer Association</li>
+						<li>2012 - Raised $28,400 for Children's Cancer Association</li>
+						<li>2013 - Raised $43,510 for Children's Cancer Association</li>
+						<li>2014 - <a href="https://www.youtube.com/watch?v=nRHX58tWFDI">Raised $48,000 for Children's Cancer Association</a><br></span>
+						</li>
+						<li>2015 - Raised $45,308 for Children's Cancer Association</li>
+						<li>2016 - Raised $40,651 for Children's Cancer Association</li>
+					</ul>
+				</div>
+				<div class="widget clearfix widget-archive">
+					<h4 class="widget-title editable">Archive</h4>
+					<ul class="list-posts list-lines">
+					  {% for post in site.categories.community %}
+					    <li>
+					      <a href="{{ post.url }}">{{ post.title }}</a>
+					    </li>
+					  {% endfor %}
 					</ul>
 				</div>
 				<div class="widget clearfix widget-blockquote">
-					<h4 class="widget-title">Blockquote widget</h4>
-					<blockquote class="blockquote-simple">
+					<h4 class="widget-title editable">Blockquote widget</h4>
+					<blockquote class="blockquote-simple editable">
 						<p>Art is the only serious thing in the world. And the artist is the only person who is never serious.</p><small>by <cite>Oscar Wilde</cite></small>
 					</blockquote>
 				</div>

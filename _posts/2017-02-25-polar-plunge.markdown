@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Polar Plunge"
+title:  "2017 Polar Plunge"
 date:   2017-02-25 14:12:36 -0800
 categories: event community
 excerpt_separator: <!--more-->
