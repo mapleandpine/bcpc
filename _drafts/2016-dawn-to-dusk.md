@@ -1,10 +1,14 @@
 ---
 layout: post
 title: 2016 Dawn to Dusk
-date: 2017-03-02 08:00:00
+date: 2016-09-17 08:00:00
 categories:
   - event
   - community
 excerpt_separator: '<!--more-->'
-image: /uploads/foodbankcollage.jpg
+image: /uploads/dunk.jpg
 ---
+
+
+BCPC's 12-hour Dawn to Dusk Paddle for the Children's Cancer Association took place on 9/17/16 in the all-day rain!&nbsp;
+<br>We raised $40,651 for CCA...thanks to everyone!&nbsp;
