@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2017 Polar Plunge
-date: 2017-02-25 22:12:00
+date: 2017-02-25 08:00:00
 categories:
   - event
   - community
@@ -14,5 +14,4 @@ We plunged into the COLD Columbia River on Saturday, 2/25, to raise funds for Sp
 
 You can still donate by clicking our team name below. Thanks!
 
-[BRRRidge City Polar Paddlers](http://soor.convio.net/site/TR/Plunge/General?team_id=1040&amp;pg=team&amp;fr_id=1060)
-<!--more-->
+[BRRRidge City Polar Paddlers](http://soor.convio.net/site/TR/Plunge/General?team_id=1040&amp;pg=team&amp;fr_id=1060)<!--more-->
