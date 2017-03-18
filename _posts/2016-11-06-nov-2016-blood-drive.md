@@ -10,4 +10,4 @@ image: /uploads/novblooddrivepic.jpg
 ---
 
 
-11/6/2016 - Bridge City Paddling Club Blood Drive. BCPC & friends donated 39 pints of blood...way to go, lifesavers!
+11/6/2016 - Bridge City Paddling Club Blood Drive. BCPC & friends donated 39 pints of blood…way to go, lifesavers!
