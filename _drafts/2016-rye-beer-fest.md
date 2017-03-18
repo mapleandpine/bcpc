@@ -6,5 +6,9 @@ categories:
   - event
   - community
 excerpt_separator: '<!--more-->'
-image: /uploads/foodbankcollage.jpg
+image: /uploads/ryebeerfest2016.jpg
 ---
+
+
+Thanks to Taplister, EastBurn, theXplodingboys & everyone that joined us at the Rye Beer Fest to support the Children's Cancer Association!
+<br>We raised $6,000 for CCA! -&nbsp; 6/10/2016
